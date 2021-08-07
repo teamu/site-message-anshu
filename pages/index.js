@@ -83,18 +83,7 @@ class Index extends Component {
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify(data);
-
-    /*var requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
-
-    fetch("https://custom-shipping-app.herokuapp.comapi/cmsmanagement/edit", requestOptions)
-      .then((response) => response.text())
-      .then((result) => console.log(result))
-      .catch((error) => console.log("error", error));*/
+	
   };
 
   rows = [
@@ -142,37 +131,7 @@ class Index extends Component {
                 </div>
 
                 <button type="submit">Submit</button>
-              </form>
-              {/*<AppProvider
-                i18n={{
-                  Polaris: {
-                    ResourceList: {
-                      sortingLabel: "Sort by",
-                      defaultItemSingular: "item",
-                      defaultItemPlural: "items",
-                      showing: "Showing {itemsCount} {resource}",
-                      Item: {
-                        viewItem: "View details for {itemName}",
-                      },
-                    },
-                    Common: {
-                      checkbox: "checkbox",
-                    },
-                  },
-                }}
-              > 
-                <DataTable
-                  columnContentTypes={[
-                    "text",
-                    "text",
-                  ]}
-                  headings={[
-                    "Title",
-                    "Content"
-                  ]}
-                  rows={this.state.data}
-                />
-              </AppProvider>*/]
+              </form>              
             </Card>
           </Layout.Section>
         </Layout>
